@@ -1,30 +1,44 @@
-.storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+:root {
+  --primary-color: #0067d5;
+}
+
+@font-face {
+  font-family: 'Loft';
+  src: url('https://assets.website-files.com/6052683cbd3896747b8918aa/60527413ead6b93f80d4cf72_5fd63409a6df421ca17b80d1_EzerLoft-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Loft';
+  src: url('https://assets.website-files.com/6052683cbd3896747b8918aa/6052741fb5dd1649700a0e86_5fd634092a8c8a55a4a0bedb_EzerLoft-Bold.woff2') format('woff2');
   font-weight: 700;
-  border: 0;
-  border-radius: 3em;
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1;
+  font-style: normal;
+  font-display: swap;
 }
-.storybook-button--primary {
-  color: white;
-  background-color: #1ea7fd;
-}
-.storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-}
-.storybook-button--small {
-  font-size: 12px;
-  padding: 10px 16px;
-}
-.storybook-button--medium {
-  font-size: 14px;
-  padding: 11px 20px;
-}
-.storybook-button--large {
+
+.btn {
+  font-family: 'Loft', sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  padding: 12px 24px;
+  display: inline-block;
+  line-height: inherit;
+  border: 0;
+  padding: 18px 2rem;
+  border-radius: 4px;
+  box-shadow: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+.btn-secondary {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--primary-color);
+  background-color: #fff;
+  color: var(--primary-color);
 }
