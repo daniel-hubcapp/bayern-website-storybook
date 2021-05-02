@@ -17,6 +17,8 @@
   font-display: swap;
 }
 
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons&display=swap');
+
 .btn {
   font-family: 'Loft', sans-serif;
   font-weight: 400;
@@ -31,14 +33,20 @@
   text-decoration: none;
   cursor: pointer;
 }
+
 .btn-primary {
   color: #fff;
   background-color: var(--primary-color);
 }
+
 .btn-secondary {
   border-style: solid;
   border-width: 1px;
   border-color: var(--primary-color);
   background-color: #fff;
   color: var(--primary-color);
+}
+
+.btn-icon {
+  font-family: 'Material Icons';
 }
